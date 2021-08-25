@@ -20,6 +20,7 @@ export default class Calculator extends Component {
         this.setOperation = this.setOperation.bind(this);
         this.addDigit = this.addDigit.bind(this);
     }
+    
     clearMemory() {
        this.setState({...intialState});
     }
@@ -38,9 +39,7 @@ export default class Calculator extends Component {
           } catch (e){
              // eslint-disable-next-line no-use-before-define
              values[0] = this.state.values[0]
-          }
-
-         
+          }         
           values[1] = 0;
 
           this.setState({
